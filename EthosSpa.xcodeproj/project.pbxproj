@@ -1,0 +1,916 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6B3919202B028F2800E567A6 /* ReusableCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B39191F2B028F2800E567A6 /* ReusableCircle.swift */; };
+		6B3A75842B028ACB00DD18FB /* ApptScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3A75832B028ACB00DD18FB /* ApptScheduleView.swift */; };
+		6B3D862F2AFD7CA9007B4C7D /* TypeOfMassagePressureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3D862E2AFD7CA9007B4C7D /* TypeOfMassagePressureView.swift */; };
+		6B3D86312AFD7D1D007B4C7D /* TypeOfPressureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3D86302AFD7D1D007B4C7D /* TypeOfPressureViewModel.swift */; };
+		6B3D86332AFD846A007B4C7D /* ApptConfirmationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3D86322AFD846A007B4C7D /* ApptConfirmationView.swift */; };
+		6B56E7B92AFBEB8A0056436D /* EthosSpaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7B82AFBEB8A0056436D /* EthosSpaApp.swift */; };
+		6B56E7BB2AFBEB8A0056436D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7BA2AFBEB8A0056436D /* ContentView.swift */; };
+		6B56E7BD2AFBEB8B0056436D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B56E7BC2AFBEB8B0056436D /* Assets.xcassets */; };
+		6B56E7C02AFBEB8B0056436D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B56E7BF2AFBEB8B0056436D /* Preview Assets.xcassets */; };
+		6B56E7CC2AFBF3D70056436D /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7CB2AFBF3D70056436D /* Colors.swift */; };
+		6B56E7CF2AFBF6930056436D /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7CE2AFBF6930056436D /* CustomInputField.swift */; };
+		6B56E7D32AFBF7990056436D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7D22AFBF7990056436D /* LoginView.swift */; };
+		6B56E7D52AFBFDC20056436D /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7D42AFBFDC20056436D /* RegistrationView.swift */; };
+		6B56E7D72AFC013A0056436D /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7D62AFC013A0056436D /* WelcomeView.swift */; };
+		6B56E7DA2AFC09300056436D /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7D92AFC09300056436D /* AuthViewModel.swift */; };
+		6B56E7DC2AFC33B60056436D /* TreatmentTypesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7DB2AFC33B60056436D /* TreatmentTypesView.swift */; };
+		6B56E7E02AFC35740056436D /* RectangleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7DF2AFC35740056436D /* RectangleComponent.swift */; };
+		6B56E7E22AFC442C0056436D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7E12AFC442C0056436D /* TabBarView.swift */; };
+		6B56E7E42AFC4BA40056436D /* ReusableImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7E32AFC4BA40056436D /* ReusableImage.swift */; };
+		6B56E7E62AFC5CA70056436D /* RelaxingMassageDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7E52AFC5CA70056436D /* RelaxingMassageDescriptionView.swift */; };
+		6B56E7E82AFD425D0056436D /* LymphaticMassageDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7E72AFD425D0056436D /* LymphaticMassageDescription.swift */; };
+		6B56E7EA2AFD47900056436D /* SculptMassageDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7E92AFD47900056436D /* SculptMassageDescriptionView.swift */; };
+		6B56E7EC2AFD4B1D0056436D /* SportMassageDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7EB2AFD4B1D0056436D /* SportMassageDescription.swift */; };
+		6B56E7EE2AFD4BC80056436D /* CuppingMassageDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7ED2AFD4BC80056436D /* CuppingMassageDescriptionView.swift */; };
+		6B56E7F02AFD4CCF0056436D /* DetoxMassageDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7EF2AFD4CCF0056436D /* DetoxMassageDescriptionView.swift */; };
+		6B56E7F22AFD4DBC0056436D /* PreNatalMassageDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7F12AFD4DBC0056436D /* PreNatalMassageDescriptionView.swift */; };
+		6B56E7F42AFD4E630056436D /* AddonMassageDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7F32AFD4E630056436D /* AddonMassageDescription.swift */; };
+		6B56E7F82AFD56A20056436D /* TypeOfTreatmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B56E7F72AFD56A20056436D /* TypeOfTreatmentView.swift */; };
+		6B6B7D3D2B02ABCF00AB39DD /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D3C2B02ABCF00AB39DD /* FirebaseAnalytics */; };
+		6B6B7D3F2B02ABCF00AB39DD /* FirebaseAnalyticsOnDeviceConversion in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D3E2B02ABCF00AB39DD /* FirebaseAnalyticsOnDeviceConversion */; };
+		6B6B7D412B02ABCF00AB39DD /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D402B02ABCF00AB39DD /* FirebaseAnalyticsSwift */; };
+		6B6B7D432B02ABCF00AB39DD /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D422B02ABCF00AB39DD /* FirebaseAnalyticsWithoutAdIdSupport */; };
+		6B6B7D452B02ABCF00AB39DD /* FirebaseAppCheck in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D442B02ABCF00AB39DD /* FirebaseAppCheck */; };
+		6B6B7D472B02ABCF00AB39DD /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D462B02ABCF00AB39DD /* FirebaseAppDistribution-Beta */; };
+		6B6B7D492B02ABCF00AB39DD /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D482B02ABCF00AB39DD /* FirebaseAuth */; };
+		6B6B7D4B2B02ABCF00AB39DD /* FirebaseAuthCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D4A2B02ABCF00AB39DD /* FirebaseAuthCombine-Community */; };
+		6B6B7D4D2B02ABCF00AB39DD /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D4C2B02ABCF00AB39DD /* FirebaseCrashlytics */; };
+		6B6B7D4F2B02ABCF00AB39DD /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D4E2B02ABCF00AB39DD /* FirebaseDatabase */; };
+		6B6B7D512B02ABCF00AB39DD /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D502B02ABCF00AB39DD /* FirebaseDatabaseSwift */; };
+		6B6B7D532B02ABCF00AB39DD /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D522B02ABCF00AB39DD /* FirebaseDynamicLinks */; };
+		6B6B7D552B02ABCF00AB39DD /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D542B02ABCF00AB39DD /* FirebaseFirestore */; };
+		6B6B7D572B02ABCF00AB39DD /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D562B02ABCF00AB39DD /* FirebaseFirestoreCombine-Community */; };
+		6B6B7D592B02ABCF00AB39DD /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D582B02ABCF00AB39DD /* FirebaseFirestoreSwift */; };
+		6B6B7D5B2B02ABCF00AB39DD /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D5A2B02ABCF00AB39DD /* FirebaseFunctions */; };
+		6B6B7D5D2B02ABCF00AB39DD /* FirebaseFunctionsCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D5C2B02ABCF00AB39DD /* FirebaseFunctionsCombine-Community */; };
+		6B6B7D5F2B02ABCF00AB39DD /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D5E2B02ABCF00AB39DD /* FirebaseInAppMessaging-Beta */; };
+		6B6B7D612B02ABCF00AB39DD /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D602B02ABCF00AB39DD /* FirebaseInAppMessagingSwift-Beta */; };
+		6B6B7D632B02ABCF00AB39DD /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D622B02ABCF00AB39DD /* FirebaseInstallations */; };
+		6B6B7D652B02ABCF00AB39DD /* FirebaseMLModelDownloader in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D642B02ABCF00AB39DD /* FirebaseMLModelDownloader */; };
+		6B6B7D672B02ABCF00AB39DD /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D662B02ABCF00AB39DD /* FirebaseMessaging */; };
+		6B6B7D692B02ABCF00AB39DD /* FirebasePerformance in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D682B02ABCF00AB39DD /* FirebasePerformance */; };
+		6B6B7D6B2B02ABCF00AB39DD /* FirebaseRemoteConfig in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D6A2B02ABCF00AB39DD /* FirebaseRemoteConfig */; };
+		6B6B7D6D2B02ABCF00AB39DD /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D6C2B02ABCF00AB39DD /* FirebaseRemoteConfigSwift */; };
+		6B6B7D6F2B02ABCF00AB39DD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D6E2B02ABCF00AB39DD /* FirebaseStorage */; };
+		6B6B7D712B02ABCF00AB39DD /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 6B6B7D702B02ABCF00AB39DD /* FirebaseStorageCombine-Community */; };
+		6B6B7D732B03DDAB00AB39DD /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B7D722B03DDAA00AB39DD /* SettingsView.swift */; };
+		6B6B7D762B03E21A00AB39DD /* SettingsRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B7D752B03E21A00AB39DD /* SettingsRowView.swift */; };
+		6B6B7D7A2B03FB4300AB39DD /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B7D792B03FB4300AB39DD /* User.swift */; };
+		6B6B7D7E2B042FDB00AB39DD /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B7D7D2B042FDB00AB39DD /* Appointment.swift */; };
+		6B6B7D802B0529C100AB39DD /* ApptScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B7D7F2B0529C100AB39DD /* ApptScheduleViewModel.swift */; };
+		6B6B7D852B05353100AB39DD /* MassageScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B7D842B05353100AB39DD /* MassageScheduleViewModel.swift */; };
+		6B6B7D872B053DE000AB39DD /* TypeOfTreatmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B7D862B053DE000AB39DD /* TypeOfTreatmentViewModel.swift */; };
+		6B89E62C2AFD8ADA0051C08B /* MassageScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B89E62B2AFD8ADA0051C08B /* MassageScheduleView.swift */; };
+		6B89E62E2AFD8AF00051C08B /* MassageScheduleOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B89E62D2AFD8AF00051C08B /* MassageScheduleOptions.swift */; };
+		6B89E6322AFD90140051C08B /* MassageTimesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B89E6312AFD90140051C08B /* MassageTimesViewModel.swift */; };
+		6B89E6392AFE9C710051C08B /* BookingRectangleComponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B89E6382AFE9C710051C08B /* BookingRectangleComponentView.swift */; };
+		6B8D8C762AFD74C600F1EAAC /* TypeOfTreatmentOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8D8C752AFD74C600F1EAAC /* TypeOfTreatmentOptions.swift */; };
+		6BF607C42B02A5E2000A0CC0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6BF607C32B02A5E1000A0CC0 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6B39191F2B028F2800E567A6 /* ReusableCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCircle.swift; sourceTree = "<group>"; };
+		6B3A75832B028ACB00DD18FB /* ApptScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApptScheduleView.swift; sourceTree = "<group>"; };
+		6B3D862E2AFD7CA9007B4C7D /* TypeOfMassagePressureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfMassagePressureView.swift; sourceTree = "<group>"; };
+		6B3D86302AFD7D1D007B4C7D /* TypeOfPressureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfPressureViewModel.swift; sourceTree = "<group>"; };
+		6B3D86322AFD846A007B4C7D /* ApptConfirmationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApptConfirmationView.swift; sourceTree = "<group>"; };
+		6B56E7B52AFBEB8A0056436D /* EthosSpa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EthosSpa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B56E7B82AFBEB8A0056436D /* EthosSpaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthosSpaApp.swift; sourceTree = "<group>"; };
+		6B56E7BA2AFBEB8A0056436D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6B56E7BC2AFBEB8B0056436D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6B56E7BF2AFBEB8B0056436D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		6B56E7CB2AFBF3D70056436D /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		6B56E7CE2AFBF6930056436D /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
+		6B56E7D22AFBF7990056436D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		6B56E7D42AFBFDC20056436D /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		6B56E7D62AFC013A0056436D /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		6B56E7D92AFC09300056436D /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		6B56E7DB2AFC33B60056436D /* TreatmentTypesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreatmentTypesView.swift; sourceTree = "<group>"; };
+		6B56E7DF2AFC35740056436D /* RectangleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleComponent.swift; sourceTree = "<group>"; };
+		6B56E7E12AFC442C0056436D /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
+		6B56E7E32AFC4BA40056436D /* ReusableImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableImage.swift; sourceTree = "<group>"; };
+		6B56E7E52AFC5CA70056436D /* RelaxingMassageDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RelaxingMassageDescriptionView.swift; sourceTree = "<group>"; };
+		6B56E7E72AFD425D0056436D /* LymphaticMassageDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LymphaticMassageDescription.swift; sourceTree = "<group>"; };
+		6B56E7E92AFD47900056436D /* SculptMassageDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SculptMassageDescriptionView.swift; sourceTree = "<group>"; };
+		6B56E7EB2AFD4B1D0056436D /* SportMassageDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SportMassageDescription.swift; sourceTree = "<group>"; };
+		6B56E7ED2AFD4BC80056436D /* CuppingMassageDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuppingMassageDescriptionView.swift; sourceTree = "<group>"; };
+		6B56E7EF2AFD4CCF0056436D /* DetoxMassageDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetoxMassageDescriptionView.swift; sourceTree = "<group>"; };
+		6B56E7F12AFD4DBC0056436D /* PreNatalMassageDescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreNatalMassageDescriptionView.swift; sourceTree = "<group>"; };
+		6B56E7F32AFD4E630056436D /* AddonMassageDescription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddonMassageDescription.swift; sourceTree = "<group>"; };
+		6B56E7F72AFD56A20056436D /* TypeOfTreatmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfTreatmentView.swift; sourceTree = "<group>"; };
+		6B6B7D722B03DDAA00AB39DD /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		6B6B7D752B03E21A00AB39DD /* SettingsRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsRowView.swift; sourceTree = "<group>"; };
+		6B6B7D792B03FB4300AB39DD /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6B6B7D7D2B042FDB00AB39DD /* Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Appointment.swift; sourceTree = "<group>"; };
+		6B6B7D7F2B0529C100AB39DD /* ApptScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApptScheduleViewModel.swift; sourceTree = "<group>"; };
+		6B6B7D842B05353100AB39DD /* MassageScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageScheduleViewModel.swift; sourceTree = "<group>"; };
+		6B6B7D862B053DE000AB39DD /* TypeOfTreatmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfTreatmentViewModel.swift; sourceTree = "<group>"; };
+		6B89E62B2AFD8ADA0051C08B /* MassageScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageScheduleView.swift; sourceTree = "<group>"; };
+		6B89E62D2AFD8AF00051C08B /* MassageScheduleOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageScheduleOptions.swift; sourceTree = "<group>"; };
+		6B89E6312AFD90140051C08B /* MassageTimesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageTimesViewModel.swift; sourceTree = "<group>"; };
+		6B89E6382AFE9C710051C08B /* BookingRectangleComponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingRectangleComponentView.swift; sourceTree = "<group>"; };
+		6B8D8C752AFD74C600F1EAAC /* TypeOfTreatmentOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfTreatmentOptions.swift; sourceTree = "<group>"; };
+		6BF607C32B02A5E1000A0CC0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6B56E7B22AFBEB8A0056436D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B6B7D4F2B02ABCF00AB39DD /* FirebaseDatabase in Frameworks */,
+				6B6B7D5D2B02ABCF00AB39DD /* FirebaseFunctionsCombine-Community in Frameworks */,
+				6B6B7D552B02ABCF00AB39DD /* FirebaseFirestore in Frameworks */,
+				6B6B7D412B02ABCF00AB39DD /* FirebaseAnalyticsSwift in Frameworks */,
+				6B6B7D3D2B02ABCF00AB39DD /* FirebaseAnalytics in Frameworks */,
+				6B6B7D3F2B02ABCF00AB39DD /* FirebaseAnalyticsOnDeviceConversion in Frameworks */,
+				6B6B7D652B02ABCF00AB39DD /* FirebaseMLModelDownloader in Frameworks */,
+				6B6B7D592B02ABCF00AB39DD /* FirebaseFirestoreSwift in Frameworks */,
+				6B6B7D452B02ABCF00AB39DD /* FirebaseAppCheck in Frameworks */,
+				6B6B7D432B02ABCF00AB39DD /* FirebaseAnalyticsWithoutAdIdSupport in Frameworks */,
+				6B6B7D492B02ABCF00AB39DD /* FirebaseAuth in Frameworks */,
+				6B6B7D4D2B02ABCF00AB39DD /* FirebaseCrashlytics in Frameworks */,
+				6B6B7D6D2B02ABCF00AB39DD /* FirebaseRemoteConfigSwift in Frameworks */,
+				6B6B7D5F2B02ABCF00AB39DD /* FirebaseInAppMessaging-Beta in Frameworks */,
+				6B6B7D512B02ABCF00AB39DD /* FirebaseDatabaseSwift in Frameworks */,
+				6B6B7D5B2B02ABCF00AB39DD /* FirebaseFunctions in Frameworks */,
+				6B6B7D712B02ABCF00AB39DD /* FirebaseStorageCombine-Community in Frameworks */,
+				6B6B7D6B2B02ABCF00AB39DD /* FirebaseRemoteConfig in Frameworks */,
+				6B6B7D472B02ABCF00AB39DD /* FirebaseAppDistribution-Beta in Frameworks */,
+				6B6B7D4B2B02ABCF00AB39DD /* FirebaseAuthCombine-Community in Frameworks */,
+				6B6B7D692B02ABCF00AB39DD /* FirebasePerformance in Frameworks */,
+				6B6B7D612B02ABCF00AB39DD /* FirebaseInAppMessagingSwift-Beta in Frameworks */,
+				6B6B7D6F2B02ABCF00AB39DD /* FirebaseStorage in Frameworks */,
+				6B6B7D532B02ABCF00AB39DD /* FirebaseDynamicLinks in Frameworks */,
+				6B6B7D572B02ABCF00AB39DD /* FirebaseFirestoreCombine-Community in Frameworks */,
+				6B6B7D672B02ABCF00AB39DD /* FirebaseMessaging in Frameworks */,
+				6B6B7D632B02ABCF00AB39DD /* FirebaseInstallations in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6B39191E2B028F0800E567A6 /* OwnerSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				6B39191F2B028F2800E567A6 /* ReusableCircle.swift */,
+			);
+			path = OwnerSchedule;
+			sourceTree = "<group>";
+		};
+		6B3A75812B028A8600DD18FB /* Appointment */ = {
+			isa = PBXGroup;
+			children = (
+				6B6B7D7B2B042DC500AB39DD /* Model */,
+				6B3A75822B028AA100DD18FB /* View */,
+				6B6B7D7C2B042DCF00AB39DD /* ViewModel */,
+			);
+			path = Appointment;
+			sourceTree = "<group>";
+		};
+		6B3A75822B028AA100DD18FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B3A75832B028ACB00DD18FB /* ApptScheduleView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B56E7AC2AFBEB8A0056436D = {
+			isa = PBXGroup;
+			children = (
+				6B56E7B72AFBEB8A0056436D /* EthosSpa */,
+				6B56E7B62AFBEB8A0056436D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6B56E7B62AFBEB8A0056436D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6B56E7B52AFBEB8A0056436D /* EthosSpa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6B56E7B72AFBEB8A0056436D /* EthosSpa */ = {
+			isa = PBXGroup;
+			children = (
+				6B56E7B82AFBEB8A0056436D /* EthosSpaApp.swift */,
+				6B56E7BA2AFBEB8A0056436D /* ContentView.swift */,
+				6B56E7C62AFBF3290056436D /* Core */,
+				6B56E7BC2AFBEB8B0056436D /* Assets.xcassets */,
+				6BF607C32B02A5E1000A0CC0 /* GoogleService-Info.plist */,
+				6B56E7BE2AFBEB8B0056436D /* Preview Content */,
+			);
+			path = EthosSpa;
+			sourceTree = "<group>";
+		};
+		6B56E7BE2AFBEB8B0056436D /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				6B56E7BF2AFBEB8B0056436D /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6B56E7C62AFBF3290056436D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6B56E7C72AFBF33A0056436D /* Authentication */,
+				6B56E7F52AFD518A0056436D /* BookMassage */,
+				6B56E7CD2AFBF6650056436D /* Components */,
+				6B3A75812B028A8600DD18FB /* Appointment */,
+				6B56E7CA2AFBF3AC0056436D /* TreatmentTypes */,
+				6B56E7C92AFBF37B0056436D /* TabBar */,
+				6B56E7C82AFBF36A0056436D /* Utilities */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6B56E7C72AFBF33A0056436D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				6B6B7D782B03FB2B00AB39DD /* Model */,
+				6B56E7D12AFBF7820056436D /* View */,
+				6B6B7D772B03FB0A00AB39DD /* ViewModel */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		6B56E7C82AFBF36A0056436D /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				6B56E7CB2AFBF3D70056436D /* Colors.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		6B56E7C92AFBF37B0056436D /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				6B56E7E12AFC442C0056436D /* TabBarView.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		6B56E7CA2AFBF3AC0056436D /* TreatmentTypes */ = {
+			isa = PBXGroup;
+			children = (
+				6B56E7DD2AFC33BD0056436D /* View */,
+			);
+			path = TreatmentTypes;
+			sourceTree = "<group>";
+		};
+		6B56E7CD2AFBF6650056436D /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				6B6B7D742B03E1F800AB39DD /* Settings */,
+				6B39191E2B028F0800E567A6 /* OwnerSchedule */,
+				6B56E7D02AFBF7330056436D /* Authentication */,
+				6B89E6372AFE9C4B0051C08B /* Booking */,
+				6B56E7DE2AFC34EE0056436D /* Treatments */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		6B56E7D02AFBF7330056436D /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				6B56E7CE2AFBF6930056436D /* CustomInputField.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		6B56E7D12AFBF7820056436D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B56E7D22AFBF7990056436D /* LoginView.swift */,
+				6B56E7D42AFBFDC20056436D /* RegistrationView.swift */,
+				6B56E7D62AFC013A0056436D /* WelcomeView.swift */,
+				6B6B7D722B03DDAA00AB39DD /* SettingsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B56E7DD2AFC33BD0056436D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B56E7DB2AFC33B60056436D /* TreatmentTypesView.swift */,
+				6B56E7E52AFC5CA70056436D /* RelaxingMassageDescriptionView.swift */,
+				6B56E7E72AFD425D0056436D /* LymphaticMassageDescription.swift */,
+				6B56E7E92AFD47900056436D /* SculptMassageDescriptionView.swift */,
+				6B56E7EB2AFD4B1D0056436D /* SportMassageDescription.swift */,
+				6B56E7ED2AFD4BC80056436D /* CuppingMassageDescriptionView.swift */,
+				6B56E7EF2AFD4CCF0056436D /* DetoxMassageDescriptionView.swift */,
+				6B56E7F12AFD4DBC0056436D /* PreNatalMassageDescriptionView.swift */,
+				6B56E7F32AFD4E630056436D /* AddonMassageDescription.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B56E7DE2AFC34EE0056436D /* Treatments */ = {
+			isa = PBXGroup;
+			children = (
+				6B56E7DF2AFC35740056436D /* RectangleComponent.swift */,
+				6B56E7E32AFC4BA40056436D /* ReusableImage.swift */,
+			);
+			path = Treatments;
+			sourceTree = "<group>";
+		};
+		6B56E7F52AFD518A0056436D /* BookMassage */ = {
+			isa = PBXGroup;
+			children = (
+				6B8D8C732AFD749000F1EAAC /* Model */,
+				6B56E7F62AFD51A50056436D /* View */,
+				6B6B7D812B052A6900AB39DD /* ViewModel */,
+			);
+			path = BookMassage;
+			sourceTree = "<group>";
+		};
+		6B56E7F62AFD51A50056436D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6B89E62B2AFD8ADA0051C08B /* MassageScheduleView.swift */,
+				6B56E7F72AFD56A20056436D /* TypeOfTreatmentView.swift */,
+				6B3D862E2AFD7CA9007B4C7D /* TypeOfMassagePressureView.swift */,
+				6B3D86322AFD846A007B4C7D /* ApptConfirmationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6B6B7D742B03E1F800AB39DD /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				6B6B7D752B03E21A00AB39DD /* SettingsRowView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		6B6B7D772B03FB0A00AB39DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B56E7D92AFC09300056436D /* AuthViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6B6B7D782B03FB2B00AB39DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B6B7D792B03FB4300AB39DD /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B6B7D7B2B042DC500AB39DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B6B7D7D2B042FDB00AB39DD /* Appointment.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6B6B7D7C2B042DCF00AB39DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B6B7D7F2B0529C100AB39DD /* ApptScheduleViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6B6B7D812B052A6900AB39DD /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6B6B7D842B05353100AB39DD /* MassageScheduleViewModel.swift */,
+				6B6B7D862B053DE000AB39DD /* TypeOfTreatmentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6B89E6372AFE9C4B0051C08B /* Booking */ = {
+			isa = PBXGroup;
+			children = (
+				6B89E6382AFE9C710051C08B /* BookingRectangleComponentView.swift */,
+			);
+			path = Booking;
+			sourceTree = "<group>";
+		};
+		6B8D8C732AFD749000F1EAAC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6B8D8C752AFD74C600F1EAAC /* TypeOfTreatmentOptions.swift */,
+				6B3D86302AFD7D1D007B4C7D /* TypeOfPressureViewModel.swift */,
+				6B89E62D2AFD8AF00051C08B /* MassageScheduleOptions.swift */,
+				6B89E6312AFD90140051C08B /* MassageTimesViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6B56E7B42AFBEB8A0056436D /* EthosSpa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6B56E7C32AFBEB8B0056436D /* Build configuration list for PBXNativeTarget "EthosSpa" */;
+			buildPhases = (
+				6B56E7B12AFBEB8A0056436D /* Sources */,
+				6B56E7B22AFBEB8A0056436D /* Frameworks */,
+				6B56E7B32AFBEB8A0056436D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EthosSpa;
+			packageProductDependencies = (
+				6B6B7D3C2B02ABCF00AB39DD /* FirebaseAnalytics */,
+				6B6B7D3E2B02ABCF00AB39DD /* FirebaseAnalyticsOnDeviceConversion */,
+				6B6B7D402B02ABCF00AB39DD /* FirebaseAnalyticsSwift */,
+				6B6B7D422B02ABCF00AB39DD /* FirebaseAnalyticsWithoutAdIdSupport */,
+				6B6B7D442B02ABCF00AB39DD /* FirebaseAppCheck */,
+				6B6B7D462B02ABCF00AB39DD /* FirebaseAppDistribution-Beta */,
+				6B6B7D482B02ABCF00AB39DD /* FirebaseAuth */,
+				6B6B7D4A2B02ABCF00AB39DD /* FirebaseAuthCombine-Community */,
+				6B6B7D4C2B02ABCF00AB39DD /* FirebaseCrashlytics */,
+				6B6B7D4E2B02ABCF00AB39DD /* FirebaseDatabase */,
+				6B6B7D502B02ABCF00AB39DD /* FirebaseDatabaseSwift */,
+				6B6B7D522B02ABCF00AB39DD /* FirebaseDynamicLinks */,
+				6B6B7D542B02ABCF00AB39DD /* FirebaseFirestore */,
+				6B6B7D562B02ABCF00AB39DD /* FirebaseFirestoreCombine-Community */,
+				6B6B7D582B02ABCF00AB39DD /* FirebaseFirestoreSwift */,
+				6B6B7D5A2B02ABCF00AB39DD /* FirebaseFunctions */,
+				6B6B7D5C2B02ABCF00AB39DD /* FirebaseFunctionsCombine-Community */,
+				6B6B7D5E2B02ABCF00AB39DD /* FirebaseInAppMessaging-Beta */,
+				6B6B7D602B02ABCF00AB39DD /* FirebaseInAppMessagingSwift-Beta */,
+				6B6B7D622B02ABCF00AB39DD /* FirebaseInstallations */,
+				6B6B7D642B02ABCF00AB39DD /* FirebaseMLModelDownloader */,
+				6B6B7D662B02ABCF00AB39DD /* FirebaseMessaging */,
+				6B6B7D682B02ABCF00AB39DD /* FirebasePerformance */,
+				6B6B7D6A2B02ABCF00AB39DD /* FirebaseRemoteConfig */,
+				6B6B7D6C2B02ABCF00AB39DD /* FirebaseRemoteConfigSwift */,
+				6B6B7D6E2B02ABCF00AB39DD /* FirebaseStorage */,
+				6B6B7D702B02ABCF00AB39DD /* FirebaseStorageCombine-Community */,
+			);
+			productName = EthosSpa;
+			productReference = 6B56E7B52AFBEB8A0056436D /* EthosSpa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6B56E7AD2AFBEB8A0056436D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					6B56E7B42AFBEB8A0056436D = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 6B56E7B02AFBEB8A0056436D /* Build configuration list for PBXProject "EthosSpa" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6B56E7AC2AFBEB8A0056436D;
+			packageReferences = (
+				6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 6B56E7B62AFBEB8A0056436D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6B56E7B42AFBEB8A0056436D /* EthosSpa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6B56E7B32AFBEB8A0056436D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B56E7C02AFBEB8B0056436D /* Preview Assets.xcassets in Resources */,
+				6B56E7BD2AFBEB8B0056436D /* Assets.xcassets in Resources */,
+				6BF607C42B02A5E2000A0CC0 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B56E7B12AFBEB8A0056436D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B89E6392AFE9C710051C08B /* BookingRectangleComponentView.swift in Sources */,
+				6B3D86332AFD846A007B4C7D /* ApptConfirmationView.swift in Sources */,
+				6B89E62C2AFD8ADA0051C08B /* MassageScheduleView.swift in Sources */,
+				6B56E7CF2AFBF6930056436D /* CustomInputField.swift in Sources */,
+				6B56E7E22AFC442C0056436D /* TabBarView.swift in Sources */,
+				6B56E7E02AFC35740056436D /* RectangleComponent.swift in Sources */,
+				6B3A75842B028ACB00DD18FB /* ApptScheduleView.swift in Sources */,
+				6B56E7EA2AFD47900056436D /* SculptMassageDescriptionView.swift in Sources */,
+				6B6B7D7E2B042FDB00AB39DD /* Appointment.swift in Sources */,
+				6B56E7F02AFD4CCF0056436D /* DetoxMassageDescriptionView.swift in Sources */,
+				6B56E7BB2AFBEB8A0056436D /* ContentView.swift in Sources */,
+				6B56E7EC2AFD4B1D0056436D /* SportMassageDescription.swift in Sources */,
+				6B56E7F42AFD4E630056436D /* AddonMassageDescription.swift in Sources */,
+				6B56E7E82AFD425D0056436D /* LymphaticMassageDescription.swift in Sources */,
+				6B56E7CC2AFBF3D70056436D /* Colors.swift in Sources */,
+				6B56E7D52AFBFDC20056436D /* RegistrationView.swift in Sources */,
+				6B56E7F22AFD4DBC0056436D /* PreNatalMassageDescriptionView.swift in Sources */,
+				6B56E7DA2AFC09300056436D /* AuthViewModel.swift in Sources */,
+				6B56E7D32AFBF7990056436D /* LoginView.swift in Sources */,
+				6B56E7E42AFC4BA40056436D /* ReusableImage.swift in Sources */,
+				6B3919202B028F2800E567A6 /* ReusableCircle.swift in Sources */,
+				6B89E62E2AFD8AF00051C08B /* MassageScheduleOptions.swift in Sources */,
+				6B56E7E62AFC5CA70056436D /* RelaxingMassageDescriptionView.swift in Sources */,
+				6B3D862F2AFD7CA9007B4C7D /* TypeOfMassagePressureView.swift in Sources */,
+				6B6B7D852B05353100AB39DD /* MassageScheduleViewModel.swift in Sources */,
+				6B56E7EE2AFD4BC80056436D /* CuppingMassageDescriptionView.swift in Sources */,
+				6B6B7D7A2B03FB4300AB39DD /* User.swift in Sources */,
+				6B89E6322AFD90140051C08B /* MassageTimesViewModel.swift in Sources */,
+				6B6B7D732B03DDAB00AB39DD /* SettingsView.swift in Sources */,
+				6B6B7D802B0529C100AB39DD /* ApptScheduleViewModel.swift in Sources */,
+				6B56E7DC2AFC33B60056436D /* TreatmentTypesView.swift in Sources */,
+				6B8D8C762AFD74C600F1EAAC /* TypeOfTreatmentOptions.swift in Sources */,
+				6B3D86312AFD7D1D007B4C7D /* TypeOfPressureViewModel.swift in Sources */,
+				6B6B7D762B03E21A00AB39DD /* SettingsRowView.swift in Sources */,
+				6B6B7D872B053DE000AB39DD /* TypeOfTreatmentViewModel.swift in Sources */,
+				6B56E7F82AFD56A20056436D /* TypeOfTreatmentView.swift in Sources */,
+				6B56E7B92AFBEB8A0056436D /* EthosSpaApp.swift in Sources */,
+				6B56E7D72AFC013A0056436D /* WelcomeView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		6B56E7C12AFBEB8B0056436D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6B56E7C22AFBEB8B0056436D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6B56E7C42AFBEB8B0056436D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EthosSpa/Preview Content\"";
+				DEVELOPMENT_TEAM = 33T4V24A4D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithluane.EthosSpa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6B56E7C52AFBEB8B0056436D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"EthosSpa/Preview Content\"";
+				DEVELOPMENT_TEAM = 33T4V24A4D;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.codewithluane.EthosSpa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6B56E7B02AFBEB8A0056436D /* Build configuration list for PBXProject "EthosSpa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B56E7C12AFBEB8B0056436D /* Debug */,
+				6B56E7C22AFBEB8B0056436D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6B56E7C32AFBEB8B0056436D /* Build configuration list for PBXNativeTarget "EthosSpa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6B56E7C42AFBEB8B0056436D /* Debug */,
+				6B56E7C52AFBEB8B0056436D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.17.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6B6B7D3C2B02ABCF00AB39DD /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		6B6B7D3E2B02ABCF00AB39DD /* FirebaseAnalyticsOnDeviceConversion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsOnDeviceConversion;
+		};
+		6B6B7D402B02ABCF00AB39DD /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		6B6B7D422B02ABCF00AB39DD /* FirebaseAnalyticsWithoutAdIdSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsWithoutAdIdSupport;
+		};
+		6B6B7D442B02ABCF00AB39DD /* FirebaseAppCheck */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAppCheck;
+		};
+		6B6B7D462B02ABCF00AB39DD /* FirebaseAppDistribution-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAppDistribution-Beta";
+		};
+		6B6B7D482B02ABCF00AB39DD /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		6B6B7D4A2B02ABCF00AB39DD /* FirebaseAuthCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseAuthCombine-Community";
+		};
+		6B6B7D4C2B02ABCF00AB39DD /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		6B6B7D4E2B02ABCF00AB39DD /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		6B6B7D502B02ABCF00AB39DD /* FirebaseDatabaseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabaseSwift;
+		};
+		6B6B7D522B02ABCF00AB39DD /* FirebaseDynamicLinks */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDynamicLinks;
+		};
+		6B6B7D542B02ABCF00AB39DD /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		6B6B7D562B02ABCF00AB39DD /* FirebaseFirestoreCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreCombine-Community";
+		};
+		6B6B7D582B02ABCF00AB39DD /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		6B6B7D5A2B02ABCF00AB39DD /* FirebaseFunctions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFunctions;
+		};
+		6B6B7D5C2B02ABCF00AB39DD /* FirebaseFunctionsCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFunctionsCombine-Community";
+		};
+		6B6B7D5E2B02ABCF00AB39DD /* FirebaseInAppMessaging-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessaging-Beta";
+		};
+		6B6B7D602B02ABCF00AB39DD /* FirebaseInAppMessagingSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseInAppMessagingSwift-Beta";
+		};
+		6B6B7D622B02ABCF00AB39DD /* FirebaseInstallations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseInstallations;
+		};
+		6B6B7D642B02ABCF00AB39DD /* FirebaseMLModelDownloader */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMLModelDownloader;
+		};
+		6B6B7D662B02ABCF00AB39DD /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		6B6B7D682B02ABCF00AB39DD /* FirebasePerformance */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebasePerformance;
+		};
+		6B6B7D6A2B02ABCF00AB39DD /* FirebaseRemoteConfig */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfig;
+		};
+		6B6B7D6C2B02ABCF00AB39DD /* FirebaseRemoteConfigSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseRemoteConfigSwift;
+		};
+		6B6B7D6E2B02ABCF00AB39DD /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		6B6B7D702B02ABCF00AB39DD /* FirebaseStorageCombine-Community */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6B6B7D3B2B02ABCF00AB39DD /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageCombine-Community";
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 6B56E7AD2AFBEB8A0056436D /* Project object */;
+}
