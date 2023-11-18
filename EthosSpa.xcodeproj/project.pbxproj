@@ -69,6 +69,10 @@
 		6B6B7D802B0529C100AB39DD /* ApptScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B7D7F2B0529C100AB39DD /* ApptScheduleViewModel.swift */; };
 		6B6B7D852B05353100AB39DD /* MassageScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B7D842B05353100AB39DD /* MassageScheduleViewModel.swift */; };
 		6B6B7D872B053DE000AB39DD /* TypeOfTreatmentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B7D862B053DE000AB39DD /* TypeOfTreatmentViewModel.swift */; };
+		6B6B7D892B05826C00AB39DD /* BookingMassageHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B7D882B05826C00AB39DD /* BookingMassageHistoryView.swift */; };
+		6B6B7D8B2B058A2500AB39DD /* BookingMassageRoundedRecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B7D8A2B058A2500AB39DD /* BookingMassageRoundedRecView.swift */; };
+		6B6B7D8D2B06796700AB39DD /* MassageHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B6B7D8C2B06796700AB39DD /* MassageHistoryViewModel.swift */; };
+		6B830B182B07E37D005B5460 /* ForgotPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B830B172B07E37D005B5460 /* ForgotPasswordView.swift */; };
 		6B89E62C2AFD8ADA0051C08B /* MassageScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B89E62B2AFD8ADA0051C08B /* MassageScheduleView.swift */; };
 		6B89E62E2AFD8AF00051C08B /* MassageScheduleOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B89E62D2AFD8AF00051C08B /* MassageScheduleOptions.swift */; };
 		6B89E6322AFD90140051C08B /* MassageTimesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B89E6312AFD90140051C08B /* MassageTimesViewModel.swift */; };
@@ -114,6 +118,10 @@
 		6B6B7D7F2B0529C100AB39DD /* ApptScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApptScheduleViewModel.swift; sourceTree = "<group>"; };
 		6B6B7D842B05353100AB39DD /* MassageScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageScheduleViewModel.swift; sourceTree = "<group>"; };
 		6B6B7D862B053DE000AB39DD /* TypeOfTreatmentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeOfTreatmentViewModel.swift; sourceTree = "<group>"; };
+		6B6B7D882B05826C00AB39DD /* BookingMassageHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingMassageHistoryView.swift; sourceTree = "<group>"; };
+		6B6B7D8A2B058A2500AB39DD /* BookingMassageRoundedRecView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingMassageRoundedRecView.swift; sourceTree = "<group>"; };
+		6B6B7D8C2B06796700AB39DD /* MassageHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageHistoryViewModel.swift; sourceTree = "<group>"; };
+		6B830B172B07E37D005B5460 /* ForgotPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordView.swift; sourceTree = "<group>"; };
 		6B89E62B2AFD8ADA0051C08B /* MassageScheduleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageScheduleView.swift; sourceTree = "<group>"; };
 		6B89E62D2AFD8AF00051C08B /* MassageScheduleOptions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageScheduleOptions.swift; sourceTree = "<group>"; };
 		6B89E6312AFD90140051C08B /* MassageTimesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MassageTimesViewModel.swift; sourceTree = "<group>"; };
@@ -298,6 +306,7 @@
 				6B56E7D42AFBFDC20056436D /* RegistrationView.swift */,
 				6B56E7D62AFC013A0056436D /* WelcomeView.swift */,
 				6B6B7D722B03DDAA00AB39DD /* SettingsView.swift */,
+				6B830B172B07E37D005B5460 /* ForgotPasswordView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -344,6 +353,7 @@
 				6B56E7F72AFD56A20056436D /* TypeOfTreatmentView.swift */,
 				6B3D862E2AFD7CA9007B4C7D /* TypeOfMassagePressureView.swift */,
 				6B3D86322AFD846A007B4C7D /* ApptConfirmationView.swift */,
+				6B6B7D882B05826C00AB39DD /* BookingMassageHistoryView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -393,6 +403,7 @@
 			children = (
 				6B6B7D842B05353100AB39DD /* MassageScheduleViewModel.swift */,
 				6B6B7D862B053DE000AB39DD /* TypeOfTreatmentViewModel.swift */,
+				6B6B7D8C2B06796700AB39DD /* MassageHistoryViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -401,6 +412,7 @@
 			isa = PBXGroup;
 			children = (
 				6B89E6382AFE9C710051C08B /* BookingRectangleComponentView.swift */,
+				6B6B7D8A2B058A2500AB39DD /* BookingMassageRoundedRecView.swift */,
 			);
 			path = Booking;
 			sourceTree = "<group>";
@@ -527,6 +539,8 @@
 				6B56E7E02AFC35740056436D /* RectangleComponent.swift in Sources */,
 				6B3A75842B028ACB00DD18FB /* ApptScheduleView.swift in Sources */,
 				6B56E7EA2AFD47900056436D /* SculptMassageDescriptionView.swift in Sources */,
+				6B6B7D892B05826C00AB39DD /* BookingMassageHistoryView.swift in Sources */,
+				6B6B7D8B2B058A2500AB39DD /* BookingMassageRoundedRecView.swift in Sources */,
 				6B6B7D7E2B042FDB00AB39DD /* Appointment.swift in Sources */,
 				6B56E7F02AFD4CCF0056436D /* DetoxMassageDescriptionView.swift in Sources */,
 				6B56E7BB2AFBEB8A0056436D /* ContentView.swift in Sources */,
@@ -538,6 +552,8 @@
 				6B56E7F22AFD4DBC0056436D /* PreNatalMassageDescriptionView.swift in Sources */,
 				6B56E7DA2AFC09300056436D /* AuthViewModel.swift in Sources */,
 				6B56E7D32AFBF7990056436D /* LoginView.swift in Sources */,
+				6B6B7D8D2B06796700AB39DD /* MassageHistoryViewModel.swift in Sources */,
+				6B830B182B07E37D005B5460 /* ForgotPasswordView.swift in Sources */,
 				6B56E7E42AFC4BA40056436D /* ReusableImage.swift in Sources */,
 				6B3919202B028F2800E567A6 /* ReusableCircle.swift in Sources */,
 				6B89E62E2AFD8AF00051C08B /* MassageScheduleOptions.swift in Sources */,

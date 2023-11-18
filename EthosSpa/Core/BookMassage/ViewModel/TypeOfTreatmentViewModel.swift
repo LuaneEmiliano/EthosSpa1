@@ -8,10 +8,11 @@
 import Foundation
 import FirebaseAuth
 
+@MainActor
 class TypeOfTreatmentViewModel: ObservableObject {
-  var appointment: Appointment
-  @Published var selection = ""
-  @Published var selectionOption = ""
+  @Published var appointment: Appointment
+  @Published var typeOfTreatmentOption = ""
+  @Published var pressureOption = ""
   @Published var selectionFilter: TypeOfPressureViewModel = .soft
   @Published var showConfirmation: Bool = false
   
@@ -22,12 +23,13 @@ class TypeOfTreatmentViewModel: ObservableObject {
   func updateAppointment() {
     guard let uid = Auth.auth().currentUser?.uid else { return }
     appointment.clientId = uid
-    appointment.massageType = selectionOption
-    appointment.pressureType = selection
+    appointment.massageType = typeOfTreatmentOption
+    appointment.pressureType = pressureOption
     
     Task {
       do {
         try await AppointmentService.updateAppointment(appointment: appointment)
+        print(appointment)
         showConfirmation = true
       } catch {
         print(error)

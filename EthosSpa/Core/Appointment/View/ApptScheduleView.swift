@@ -48,6 +48,13 @@ struct ApptScheduleView: View {
         viewModel.createAvailableAppointments()
       } label: {
         Text("Update Schedule")
+          .font(.headline)
+          .foregroundColor(Color.white)
+          .frame(height: 55)
+          .frame(maxWidth: .infinity)
+          .background(Color.orangeButtons)
+          .cornerRadius(10)
+          .padding(40)
       }
       
       Spacer()

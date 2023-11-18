@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct BookingRectangleComponentView: View {
+  let appointment: Appointment
+  
   var body: some View {
     VStack {
       NavigationLink {
-        TypeOfTreatmentView(appointment: Appointment())
+        TypeOfTreatmentView(appointment: appointment)
       } label: {
         RoundedRectangle(cornerRadius: 10)
           .fill(Color.orangeButtons)
-          .frame(width: 70, height: 40)
+          .frame(width: 100, height: 40)
           .padding(.top, 4)
           .overlay(
             VStack {
@@ -32,5 +34,5 @@ struct BookingRectangleComponentView: View {
 }
 
 #Preview {
-  BookingRectangleComponentView()
+  BookingRectangleComponentView(appointment: Appointment(apptId: ""))
 }

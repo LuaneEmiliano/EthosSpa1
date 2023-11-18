@@ -9,27 +9,39 @@ import SwiftUI
 
 struct TabBarView: View {
   @State private var selectedIndex = 0
+  @EnvironmentObject var viewModel: AuthViewModel
   
   var body: some View {
     TabView(selection: $selectedIndex) {
+      if !(viewModel.currentUser?.isOwner ?? false) {
       TreatmentTypesView()
         .tabItem {
           Image(systemName: "house")
           Text("Home")
         }.tag(0)
+      }
       
-      BookingRectangleComponentView()
+      BookingMassageHistoryView()
         .tabItem {
           Image(systemName: "doc.badge.plus")
           Text("Massage")
         }.tag(1)
       
+      if viewModel.currentUser?.isOwner ?? false {
+        ApptScheduleView()
+          .tabItem {
+            Image(systemName: "calendar")
+            Text("Scheduling")
+          }.tag(2)
+      }
+      
       SettingsView()
         .tabItem {
           Image(systemName: "person")
           Text("Profile")
-        }.tag(2)
+        }.tag(3)
     }
+    .accentColor(Color.orangeButtons)
     .onAppear() {
       UITabBar.appearance().barTintColor = UIColor.viewColors
     }

@@ -8,48 +8,46 @@
 import SwiftUI
 
 struct TypeOfMassagePressureView: View {
-  
   @ObservedObject var viewModel: TypeOfTreatmentViewModel
   
   var body: some View {
-    NavigationStack {
-      VStack {
-        Text("What type of pressure do you want?")
-          .padding(.top, 25)
-          .font(.title2)
-          .foregroundColor(.letterColor)
-        
-        ScrollView {
-          ForEach(TypeOfPressureViewModel.allCases, id: \.rawValue) { item in
-            Button {
-              viewModel.selectionOption = item.title
-            } label: {
-              RectangleComponent(text: item.title, selection: viewModel.selectionOption)
-            }
+    VStack {
+      Text("What type of pressure do you want?")
+        .padding(.top, 25)
+        .font(.title2)
+        .foregroundColor(.letterColor)
+      
+      ScrollView {
+        ForEach(TypeOfPressureViewModel.allCases, id: \.rawValue) { item in
+          Button {
+            viewModel.pressureOption = item.title
+          } label: {
+            RectangleComponent(text: item.title, selection: viewModel.pressureOption)
           }
         }
-        
-        Button {
-          viewModel.updateAppointment()
-        } label: {
-          Text("Book your massage")
-            .font(.headline)
-            .foregroundColor(Color.white)
-            .frame(height: 55)
-            .frame(maxWidth: .infinity)
-            .background(Color.orangeButtons)
-            .cornerRadius(10)
-            .padding(40)
-        }
       }
-      .background(Color.viewColor)
-      .sheet(isPresented: $viewModel.showConfirmation, content: {
+      
+      NavigationLink {
         ApptConfirmationView(viewModel: viewModel)
-      })
+      } label: {
+        Text("Book your massage")
+          .font(.headline)
+          .foregroundColor(Color.white)
+          .frame(height: 55)
+          .frame(maxWidth: .infinity)
+          .background(Color.orangeButtons)
+          .cornerRadius(10)
+      }
+      .padding(.top, 10)
+      .padding(.bottom, 10)
+      .padding(.horizontal, 20)
     }
+    .frame(maxWidth: .infinity, maxHeight: .infinity)
+    .background(Color.viewColor)
     .accentColor(.letterColor)
   }
 }
+
 #Preview {
-  TypeOfMassagePressureView(viewModel: TypeOfTreatmentViewModel(appointment: Appointment()))
+  TypeOfMassagePressureView(viewModel: TypeOfTreatmentViewModel(appointment: Appointment(apptId: UUID().uuidString)))
 }

@@ -15,51 +15,52 @@ struct ReusableImage: View {
   var procedure2: String
   
   var body: some View {
-    VStack {
-      ScrollView {
-      image
-        .resizable()
-        .frame(width: 370, height: 250)
-        .cornerRadius(10)
-        .padding(.top, 10)
-        .padding(.bottom, 10)
-        VStack {
-          Text(treatmentTitle)
-            .font(.title2)
-            .fontWeight(.semibold)
-            .padding(.bottom, 7)
-          Text(imageDescription)
-            .font(.title3)
-            .padding(.bottom, 7)
-          
-          VStack(alignment: .leading, spacing: 10) {
-            Text(procedure1)
-              .font(.headline)
-            Text(procedure2)
-              .font(.headline)
+    ZStack {
+      VStack {
+        ScrollView(.vertical, showsIndicators: false) {
+          image
+            .resizable()
+            .frame(width: 370, height: 250)
+            .cornerRadius(10)
+            .padding(.top, 10)
+            .padding(.bottom, 10)
+          VStack {
+            Text(treatmentTitle)
+              .font(.title2)
+              .fontWeight(.semibold)
+              .padding(.bottom, 7)
+            Text(imageDescription)
+              .font(.title3)
+              .padding(.bottom, 7)
+            
+            VStack(alignment: .leading, spacing: 10) {
+              Text(procedure1)
+                .font(.headline)
+              Text(procedure2)
+                .font(.headline)
+            }
           }
         }
-      }
-      .foregroundColor(Color.letterColor)
-      .padding(.horizontal, 3)
-      
-      NavigationLink {
-        MassageScheduleView()
-      } label: {
-        Text("Book now")
-          .font(.headline)
-          .foregroundColor(Color.white)
-          .frame(height: 55)
-          .frame(maxWidth: .infinity)
-          .background(Color.orangeButtons)
-          .cornerRadius(10)
-          .padding(40)
+        .foregroundColor(Color.letterColor)
+        .padding(.horizontal, 5)
         
+        NavigationLink {
+          MassageScheduleView()
+        } label: {
+          Text("Book now")
+            .font(.headline)
+            .foregroundColor(Color.white)
+            .frame(height: 55)
+            .frame(maxWidth: .infinity)
+            .background(Color.orangeButtons)
+            .cornerRadius(10)
+        }
+        .padding(.top, 20)
+        .padding(.bottom, 10)
+        .padding(.horizontal, 20)
       }
-      .padding(.horizontal, 20)
+      .frame(maxWidth: .infinity, maxHeight: .infinity)
+      .background(Color.viewColor)
     }
-    .frame(maxHeight: .infinity)
-    .background(Color.viewColor)
-    
   }
 }

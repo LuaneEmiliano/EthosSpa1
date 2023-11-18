@@ -17,7 +17,7 @@ class ApptScheduleViewModel: ObservableObject {
     Task {
       do {
         for option in selectionOption {
-          let appointment = Appointment(clientId: "", appointmentTime: option, date: date, massageType: "", pressureType: "")
+          let appointment = Appointment(apptId: UUID().uuidString, clientId: "", appointmentTime: option, date: date, massageType: "", pressureType: "")
           let encodedAppointment = try Firestore.Encoder().encode(appointment)
           try await Firestore.firestore().collection("appointments").document(appointment.apptId).setData(encodedAppointment)
         }

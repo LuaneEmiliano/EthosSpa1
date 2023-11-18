@@ -19,10 +19,9 @@ struct EthosSpaApp: App {
   var body: some Scene {
     WindowGroup {
       NavigationView {
-       ContentView()
-        //MassageScheduleView()
-       // ApptScheduleView()
-      }
+      ContentView()
+        //SettingsView()
+        }
       .environmentObject(viewModel)
     }
   }
